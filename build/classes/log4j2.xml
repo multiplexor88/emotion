@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Appenders>
+    <Console name="Console" target="System.out">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+      <Logger name="logic.analyzer.AnalyzerIF" level="trace"/>
+      <Logger name="logic.analyzer.VideoAnalyzer" level="trace"/>
+      <Logger name="logic.analyzer.PhotoAnalyzer" level="trace"/>
+      
+      <Logger name="logic.featurepointextractor.FeaturePointsExtractorIF" level="trace"/>
+      <Logger name="logic.featurepointextractor.EyeBrowsFPE" level="trace"/>
+      <Logger name="logic.featurepointextractor.EyeIrisesFPE" level="trace"/>
+      <Logger name="logic.featurepointextractor.MouthFPE" level="trace"/>
+      
+      <Logger name="logic.localizator.LocalizatorIF" level="trace"/>
+      <Logger name="logic.localizator.EyeBrowsLocalizator" level="trace"/>
+      <Logger name="logic.localizator.EyesLocalizator" level="trace"/>
+      <Logger name="logic.localizator.FaceLocalizator" level="trace"/>
+      <Logger name="logic.localizator.MouthLocalizator" level="trace"/>
+      <Logger name="logic.localizator.NoseLocalizator" level="trace"/>
+      
+      <Logger name="logic.imageloader.ImageLoaderIF" level="trace"/>
+      <Logger name="logic.imageloader.DiskLoader" level="trace"/>
+      <Logger name="logic.imageloader.USBCamera" level="trace"/>
+      
+      <Root level="ERROR">
+        <AppenderRef ref="Console"/>
+      </Root>
+  </Loggers>
+</Configuration>

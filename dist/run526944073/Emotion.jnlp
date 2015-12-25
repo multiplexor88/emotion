@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Emotion.jnlp">
+  <information>
+    <title>Emotion</title>
+    <vendor>igor</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Emotion.jar" size="65035" download="eager" />
+    <jar href="lib/Imshow.jar" size="3799" download="eager" />
+    <jar href="lib/commons-logging-1.2-javadoc.jar" size="158448" download="eager" />
+    <jar href="lib/commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib/javacv.jar" size="915189" download="eager" />
+    <jar href="lib/javax.mail.jar" size="545362" download="eager" />
+    <jar href="lib/junit-4.10.jar" size="253160" download="eager" />
+    <jar href="lib/log4j-api-2.3.jar" size="135903" download="eager" />
+    <jar href="lib/log4j-core-2.3.jar" size="827024" download="eager" />
+    <jar href="lib/opencv-2411.jar" size="450733" download="eager" />
+    <jar href="lib/poi-3.10-FINAL-20140208.jar" size="1950905" download="eager" />
+    <jar href="lib/tomcat-dbcp.jar" size="231390" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Emotion" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="emotion.Emotion"  name="Emotion" />
+  <update check="always"/>
+</jnlp>

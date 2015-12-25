@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1048.0" prefWidth="1275.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="emotion.FXController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="993.0" minHeight="10.0" prefHeight="993.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="515.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TitledPane prefHeight="1002.0" prefWidth="638.0" text="Virtual Face">
+         <content>
+            <GridPane fx:id="virtualScene">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content></TitledPane>
+      <TitledPane prefHeight="1000.0" prefWidth="637.0" text="Camera Capture" GridPane.columnIndex="1">
+         <content>
+            <ImageView fx:id="cameraCaptureView" fitHeight="814.0" fitWidth="638.0" pickOnBounds="true" preserveRatio="true" />
+         </content></TitledPane>
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="showCameraCaptureBtn" mnemonicParsing="false" onAction="#displayCameraCapture" prefHeight="67.0" prefWidth="346.0" text="Show Camera Capture" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="startCameraBtn" mnemonicParsing="false" onAction="#startFaceFeaturesDetection" prefHeight="55.0" prefWidth="318.0" text="Start" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   </children>
+</GridPane>
